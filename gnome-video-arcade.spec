@@ -7,21 +7,26 @@ Group:		Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-video-arcade/0.6/%{name}-%{version}.tar.bz2
 # Source0-md5:	1f9d8ca7c56757fe0ffde789b65269cb
 URL:		http://mbarnes.github.com/gnome-video-arcade/
+BuildRequires:	GConf2
+BuildRequires:	GConf2-devel >= 2.0.0
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	GConf2-devel >= 2.0.0
 BuildRequires:	dbus-glib-devel
+BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.12.0
+BuildRequires:	gnome-doc-utils
 BuildRequires:	gnome-icon-theme
 BuildRequires:	gtk+2-devel >= 2:2.14.0
-BuildRequires:	libgladeui-devel >= 3.0.0
+BuildRequires:	gtk-doc-automake
+BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	libwnck-devel >= 2.16.0
+BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig
 BuildRequires:	sqlite3-devel >= 3.0.0
-Requires(post,preun):	GConf2
 Requires(post,postun):	hicolor-icon-theme
+Requires(post,preun):	GConf2
 Requires:	sdlmame
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
