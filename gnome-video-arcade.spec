@@ -1,7 +1,7 @@
 Summary:	GNOME Video Arcade - a simple MAME frontend for the GNOME desktop
 Name:		gnome-video-arcade
 Version:	0.6.8
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-video-arcade/0.6/%{name}-%{version}.tar.bz2
@@ -25,6 +25,7 @@ BuildRequires:	libwnck-devel >= 2.16.0
 BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig
 BuildRequires:	sqlite3-devel >= 3.0.0
+Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires(post,preun):	GConf2
 Requires:	sdlmame
