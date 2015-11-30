@@ -35,7 +35,7 @@ Requires(post,preun):	glib2 >= 1:2.28
 Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires:	glib2 >= 1:2.28
-Requires:	sdlmame
+Requires:	mame
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -68,7 +68,7 @@ Plik katalogu GNOME Video Arcade dla Glade.
 %{__autoheader}
 %{__automake}
 %configure \
-	MAME=/usr/bin/sdlmame \
+	MAME=/usr/bin/mame \
 	--disable-silent-rules \
 	--disable-static \
 	%{?with_glade:--with-glade-catalog} \
