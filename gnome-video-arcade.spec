@@ -6,7 +6,7 @@ Summary:	GNOME Video Arcade - a simple MAME frontend for the GNOME desktop
 Summary(pl.UTF-8):	GNOME Video Arcade - prosty interfejs użytkownika do MAME dla środowiska GNOME
 Name:		gnome-video-arcade
 Version:	0.8.8
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		X11/Applications/Games
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-video-arcade/0.8/%{name}-%{version}.tar.xz
